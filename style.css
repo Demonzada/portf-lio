@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --cor-principal: #65b5ff;
+    --cor-animacao: #b2daff;
+
+}
+
+strong{
+    color: var(--cor-principal);
+}
+
+/* 
+
+NAVBAR
+
+*/
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    padding: 5% 15% 2% 4%;
+    align-items: center;
+    color: black;
+    border-radius: 0px;
+}
+
+.navbar-botoes{
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    gap: 4vh;
+    transition-duration: 0.2s;
+}
+
+
+.navbar-botoes a{
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+/* 
+
+Principal
+
+*/
+
+.principal{
+    margin: 2% 0% 0% 9%;
+    font-size: 2rem;
+    gap: 12vh;
+    display: flex;
+}
+
+.principal-titulo{
+    margin: 4% 0% 0%;
+}
+
+.principal-infos{
+    width: 50%;
+}
+
+.principal-descricao{
+    margin-top: 2%;
+    width: 85%;
+    font-size: 1.3rem;
+}
+
+.principal-cursados{
+    list-style: none;
+    display: flex;
+    gap: 5vh;
+    font-size: 2rem;
+    color: var(--cor-principal);
+    text-align: center;
+}
+.principal-cursados li{
+    transition: 1s;
+}
+
+.principal-cursados p{
+    color: black;
+}
+
+
+.principal-foto{
+    width: 30%;
+    height: 600%;
+    border-radius: 20px;
+}
+
+.principal-botoes{
+    list-style: none;
+    padding: 19% 0% 0% 0%;
+    transition-duration: 0.2s;
+}
+
+.principal-botao{
+    gap: 5%;
+    color: black;
+    border: 2px solid var(--cor-principal);
+    border-radius: 4%;
+    padding: 2% 10%;
+    margin: 0% 6% 0% 0%;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+/* 
+
+Cursos
+
+*/
+
+
+.cursos{
+    margin-top: 7%;
+    background-color: #f0f0f0;
+}
+
+.cursos-principal{
+    text-align: center;
+    font-weight: 500;
+    padding: 2% 0% 2%;
+    font-size: 2rem;
+}
+
+.cursos-infos{
+    margin: 0% 4%;
+}
+
+.cursos-infos-imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cursos-infos-img{
+    cursor: pointer;
+}
+
+
+/* 
+
+INFO OCULTAS
+
+*/
+
+
+.info-oculta{
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 1% 17%;
+    -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+}
+
+.info-oculta-texto{
+    padding: 10%;
+}
+
+.info-oculta1{
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 1% 17%;
+    -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+}
+
+.info-oculta2{
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 1% 38%;
+    -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+}
+
+.info-oculta3{
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 1% 67%;
+    -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+}
+
+.info-oculta4{
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 1% 67%;
+    -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
+}
+
+
+
+.info-oculta-texto1, .info-oculta-texto2, .info-oculta-texto3, .info-oculta-texto4{
+    padding: 10%;
+}
+
+
+
+/* 
+
+ANIMAÇÕES
+
+*/
+
+
+.navbar-botoes :hover{
+    color: #618aaf;
+}
+
+.principal-titulo strong:hover{
+    color: var(--cor-animacao);
+}
+
+.principal-cursados li:hover{
+    scale: 1.1;
+}
+
+.principal-botoes :active{
+    color: white;
+    background-color: #e6e6e6;
+}
