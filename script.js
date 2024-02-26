@@ -1,11 +1,10 @@
 function ativar(){
-    let oculto = document.querySelector(`.info-oculta${cursonum}`)
-
     for(var i= 1 ; i < 5; i++) {
         let desligaroculto = document.querySelector(`.info-oculta${i}`)
         desligaroculto.style.display = 'none'
     }
 
+    let oculto = document.querySelector(`.info-oculta${cursonum}`)
     if (oculto.style.display === 'block') {
         oculto.style.display = 'none'
     } else {

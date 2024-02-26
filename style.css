@@ -36,7 +36,6 @@ NAVBAR
     list-style: none;
     display: flex;
     gap: 4vh;
-    transition-duration: 0.2s;
 }
 
 
@@ -63,6 +62,11 @@ Principal
 .principal-titulo{
     margin: 4% 0% 0%;
 }
+
+.principal-titulo strong{
+    transition: 0.2s;
+}
+
 
 .principal-infos{
     width: 50%;
@@ -124,13 +128,20 @@ Cursos
 .cursos{
     margin-top: 7%;
     background-color: #f0f0f0;
+    border-radius: 5%
 }
 
 .cursos-principal{
     text-align: center;
     font-weight: 500;
-    padding: 2% 0% 2%;
+    padding: 2% 0% 0% 0%;
     font-size: 2rem;
+}
+
+.cursos-descricao{
+    text-align: center;
+    font-weight: 500;
+    padding: 0% 0% 2% 0%;
 }
 
 .cursos-infos{
@@ -175,7 +186,7 @@ INFO OCULTAS
     display: none;
     background-color: #ffffff;
     width: 20%;
-    margin: 1% 17%;
+    margin: 1% 14%;
     -webkit-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
     box-shadow: 7px 7px 34px 0px rgba(0,0,0,0.5);
@@ -231,6 +242,7 @@ ANIMAÇÕES
 
 .navbar-botoes :hover{
     color: #618aaf;
+    transform: translateY(-10%);
 }
 
 .principal-titulo strong:hover{
