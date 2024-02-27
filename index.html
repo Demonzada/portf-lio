@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c9ff013158.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="./script.js"></script>
     <title>Robert Alexandre | Portifólio</title>
 </head>
 
 <body>
+
+
+<!-- HEADER -->
+
     <header class="navbar">
         <ul class="navbar-botoes">
-            <li> <a href="">Contato</a> </li>
-            <li> <a href="https://github.com/Demonzada">GitHub</a> </li>
-            <li> <a href="https://linkedin.com/in/robert-alxx">Linkedin</a> </li>
+
+            <li> <a href="#">PRINCIPAL</a> </li>
+            <li> <a href="#">CURSOS</a> </li>
+            <li> <a href="#">PROJETOS</a> </li>
         </ul>
     </header>
 
+
+<!-- PRINCIPAL -->
 
     <main class="principal">
         <section class="principal-infos">
@@ -41,54 +49,110 @@
     </main>
 
 
+<!-- DIV CURSOS -->
+
+    <div class="texto-div">
+                <p>CURSOS</p>
+    </div>
+
+
+<!-- CURSOS -->
+
     <section class="cursos">
-        <h3 class="cursos-principal">Cursos Feitos</h3>
-        <h5 class="cursos-descricao">Clique nas instituições para mais detalhes</h5>
-
-        <div class="cursos-infos">
-            <div class="cursos-infos-imgs">
-                <img class="cursos-infos-img" src="imagens/alura.png" onclick="curso_botao(1)" style="width: 10%; height: 10%;" alt="Alura"> 
-                <div class="info-oculta1">
-                    <p class="info-oculta-texto1"></p>
+        <div class="cursos-card">
+                <div class="cursos-card-img">
+                    <img src="./imagens/fundações/alura.png" alt="Alura">
                 </div>
 
-                <img class="cursos-infos-img" src="imagens/fundbradesco.png" onclick="curso_botao(2)" style="width: 10%; height: 10%;" alt="Fundação Bradesco">
-                <div class="info-oculta2">
-                    <p class="info-oculta-texto2"></p>
-                </div>
-
-                <img class="cursos-infos-img" src="imagens/prime.png" onclick="curso_botao(3)" style="width: 13%; height: 13%;" alt="Prime Cursos">
-                <div class="info-oculta3">
-                    <p class="info-oculta-texto3"></p>
-                </div>
-
-                <img class="cursos-infos-img" src="imagens/especializati.png" onclick="curso_botao(4)" style="width: 10%; height: 10%;" alt="EspecializaTI">
-                <div class="info-oculta4">
-                    <p class="info-oculta-texto4"></p>
+                <div class="cursos-card-infos">
+                    <h3 class="cursos-card-titulo">Alura</h3>
+                    <p class="cursos-card-desc">Os cursos feitos envolvem <strong> HTML, CSS, JavaScript, Git</strong> e <strong>GitHub</strong>.</p>
                 </div>
             </div>
-        </div>
+
+            <div class="cursos-card">
+                <div class="cursos-card-img">
+                    <img src="./imagens/fundações/fundbradesco.png" alt="Fundação Bradesco">
+                </div>
+
+                <div class="cursos-card-infos">
+                    <h3 class="cursos-card-titulo">Fundação Bradesco</h3>
+                    <p class="cursos-card-desc">Os cursos feitos envolvem <strong> HTML e CSS na prática</strong>.</p>
+                </div>
+            </div>
+
+            <div class="cursos-card">
+                <div class="cursos-card-img">
+                    <img src="./imagens/fundações/prime.png" alt="Prime Cursos">
+                </div>
+
+                <div class="cursos-card-infos">
+                    <h3 class="cursos-card-titulo">Prime Cursos</h3>
+                    <p class="cursos-card-desc">Os cursos feitos envolvem <strong> mySQL e PHP</strong> na prática.</p>
+                </div>
+            </div>
+
+            <div class="cursos-card">
+                <div class="cursos-card-img">
+                    <img src="./imagens/fundações/especializati.png" alt="Alura">
+                </div>
+
+                <div class="cursos-card-infos">
+                    <h3 class="cursos-card-titulo">EspecializaTI</h3>
+                    <p class="cursos-card-desc">Os cursos feitos envolvem <strong> HTML, CSS, HTML 5 Samurai</strong> e <strong>CSS</strong>.</p>
+                </div>
+            </div>
     </section>
+
+
+<!-- DIV PROJETOS -->
+
+<div class="texto-div">
+    <p>PROJETOS</p>
+</div>
+
+
+<!-- PROJETOS -->
+    
+<section class="projetos">
+
+    <div class="projetos-card">
+        <div class="projetos-card-info">
+            <h3>Alura - Desafio Encriptador <br> <br></h3>
+            <p>O desafio feito pelos orientadores basea-se em criptografar e descriptografar o texto enviado em uma input.</p>
+        </div>
+
+        <div class="projetos-card-info-imagem">
+            <img src="imagens/projeto-1.png" alt="Projeto Text Coder">
+        </div>
+
+        <a class="projetos-card-info-botao" href="https://challenge-alura-demonzada.vercel.app/" target="_blank">Ir até o projeto Online</a>
+        <a class="projetos-card-info-botao" href="https://github.com/Demonzada/challenge-alura-demonzada" target="_blank">Ir até o repositório</a>
+    </div>
+
+    <div class="projetos-card">
+        <div class="projetos-card-info">
+            <h3>Alura - Portifólio <br> <br></h3>
+            <p>Nas aulas do curso, os orientadores ensinaram a criar um portifólio com auxílio do figma.</p>
+        </div>
+
+        <div class="projetos-card-info-imagem">
+            <img src="imagens/projeto-2.png" alt="Projeto Portifólio">
+        </div>
+
+            <a class="projetos-card-info-botao" href="https://portifolio-alura-demonzada.vercel.app/" target="_blank">Ir até o projeto Online</a>
+            <a class="projetos-card-info-botao" href="https://github.com/Demonzada/portifolio-alura-demonzada" target="_blank">Ir até o repositório</a>
+    </div>
 
     
-    <section class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
 
-        <div class="projetos-card">
-            <div class="projetos-card-info">
-                <h4 class="projetos-card-info-titulo">Alura - Desafio Encriptador <br> <br></h4>
-                <img class="projetos-card-info-imagem"src="imagens/projeto-1.png" alt="Projeto Text Coder">
-                <a class="projetos-card-info-botao" href="https://alurachallenge-omega.vercel.app/" target="_blank">Ir até o projeto</a>
-            </div>
+</section>
 
-            <div class="projetos-card-info">
-                <h4 class="projetos-card-info-titulo">Alura - Portifólio <br> <br></h4>
-                <img class="projetos-card-info-imagem"src="imagens/projeto-2.png" alt="Projeto Text Coder">
-                <a class="projetos-card-info-botao" href="https://portfolio-alura-pearl-ten.vercel.app/" target="_blank">Ir até o projeto</a>
-            </div>
-        </div>
 
-    </section>
+<!-- FOOTER -->
+<section class="footer">
+    <p class="footer-texto">Desenvolvido por Robert Alexandre</p>
+</section>
 
 </body>
 </html>
